@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active"> 
+            <div class="image">
+                <img src="img.jpg" alt="chat image" width="450" height="500" class="image">
+            </div>
+            <div class="content"> 
+                <div class="title">
+                    <h1>Connect</h1>
+                </div>
+                <div class="form">
+                    <div class="login">
+                        Login
+                    </div>
+                    <div class="form-input username">
+                        <input type="text" id="username" placeholder="username">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <div class="form-input button">
+                        <button id="join-user">Login</button>
+                    </div>
+                    <div class="info">
+                        <div class="l1">Welcome to Connect!</div>
+                        <div class="l2">Your Digital Conversation Space :)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="chat">
+                <div class="header">
+                    <div class="logo">ChatRoom</div>
+                    <button class="button" id="exit-chat">Exit</button>
+                </div>
+                <div class="messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="typebox">
+                    <input type="text" id="message-input">
+                    <button id="send-message">Send</button>
+                </div>  
+            </div>       
+        </div>
+    </div>
+    <script src="code.js"></script> <!-- Load the script at the end of the body -->
+</body>
+</html>
